@@ -1,0 +1,11 @@
+# Build artifacts, dependencies & logs
+/build/
+/htslib/
+*.json
+*.log
+
+# Test data should not be in git
+/test_data/
+
+# IDE settings
+.vscode/
