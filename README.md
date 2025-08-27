@@ -5,7 +5,7 @@ The system performs a single-pass analysis of BAM files, calculating key quality
 
 ---
 
-### Architecture & Technology
+### Architecture \ Technology
 
 The application is a single, statically-linked executable, which ensures maximum portability and straightforward integration into any bioinformatics pipeline.
 
@@ -111,9 +111,8 @@ The executable is located in the `./build` directory.
 ### Performance & Production Use
 
 > BAMalyzer is engineered as a high-performance tool ready for integration. Its performance is directly dependent on the I/O subsystem speed and the number of available CPU cores.
-
-For use in production pipelines:
-1.  **Static Linking:** Ensure `htslib` and other system dependencies are available on the target machine, or consider a fully static build of `bamalyzer` for maximum portability.
-2.  **Resource Management:** Adjust the thread count (`--threads`) according to the server's resources and the number of concurrent tasks to avoid system overload.
-3.  **Error Handling:** The utility will exit with a non-zero status code upon failure (e.g., input file not found), allowing it to be used in scripts and workflow managers such as Snakemake or Nextflow.
+For use in pipelines:
+1.   Ensure `htslib` and other system dependencies are available on the target machine, or consider a fully static build of `bamalyzer` for maximum portability.
+2.  Adjust the thread count (`--threads`) according to the server's resources and the number of concurrent tasks to avoid system overload.
+3.  The utility will exit with a non-zero status code upon failure (e.g., input file not found), allowing it to be used in scripts and workflow managers such as Snakemake or Nextflow.
 ```
