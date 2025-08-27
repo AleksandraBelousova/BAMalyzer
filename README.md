@@ -13,7 +13,7 @@ The application is a single, statically-linked executable, which ensures maximum
 *   **Build System:** CMake. The `CMakeLists.txt` is configured for building in a Linux environment (WSL2 is recommended on Windows).
 *   **BAM Parsing:** `htslib`. Direct use of the original C library ensures maximum parsing performance by eliminating any overhead.
 *   **Parallelism:** OpenMP. A classic and efficient "single-producer, multiple-consumer" model allows all available CPU cores to be engaged for data processing.
-*   **Command-Line Interface (CLI):** `CLI11`. A lightweight, header-only library for creating an intuitive and powerful command-line interface.
+*   **Command-Line Interface (CLI):** `CLI11`. A lightweight, header-only library for creating an intuitive and command-line interface.
 *   **Reporting:** `nlohmann/json`. Used for generating a structured JSON report with the analysis results.
 
 ---
@@ -21,7 +21,7 @@ The application is a single, statically-linked executable, which ensures maximum
 ### Getting Started
 
 **Prerequisites:**
-*   A C++ compiler (GCC/Clang)
+*   C++ compiler (GCC/Clang)
 *   CMake (version 3.16+)
 *   Git
 *   Build dependencies for `htslib`: `build-essential`, `autoconf`, `automake`, `libtool`, `zlib1g-dev`, `libbz2-dev`, `liblzma-dev`, `libcurl4-gnutls-dev`, `libssl-dev`.
